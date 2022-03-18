@@ -71,50 +71,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-lyh" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/03/19/lyh/" class="article-date">
-  <time class="dt-published" datetime="2022-03-18T19:29:19.687Z" itemprop="datePublished">2022-03-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <hr>
-<p>title:lyh<br>tags:linux</p>
-<hr>
-<h2 id="1-CPU异常注入脚本安装"><a href="#1-CPU异常注入脚本安装" class="headerlink" title="1. CPU异常注入脚本安装"></a>1. CPU异常注入脚本安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/peaclab/HPAS.git</span><br><span class="line"></span><br><span class="line">./autogen.sh</span><br><span class="line"></span><br><span class="line">./configure</span><br><span class="line"></span><br><span class="line">make &amp;&amp; make install</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="2-CPU注入见脚本"><a href="#2-CPU注入见脚本" class="headerlink" title="2. CPU注入见脚本"></a>2. CPU注入见脚本</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/local/openmpi2/bin/mpirun --cpu-set 0 -np 1 --allow-run-as-root /usr/local/bin/hpas cpuoccupy -u $&#123;intensity&#125; -d timelen  -v</span><br></pre></td></tr></table></figure>
-
-<p><code>--cpu-set</code> 是mpirun中的参数，指定运行的核心数，如<code>--cpu-set 1-8</code> 代表在第1道第8个核心上运行</p>
-<p><code>-np</code> 指定运行的进程</p>
-<p><code>--allow-run-as-root </code> 是指miprun在root权限下运行</p>
-<h2 id="3-内存带宽测试MBW"><a href="#3-内存带宽测试MBW" class="headerlink" title="3. 内存带宽测试MBW"></a>3. 内存带宽测试MBW</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/raas/mbw.git</span><br><span class="line"></span><br><span class="line">cd mbw</span><br><span class="line">make</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">就会生成mbw进程</span></span><br></pre></td></tr></table></figure>
-
-
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/03/19/lyh/" data-id="cl0wtfcov0001cjt1787r1fi4" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/03/19/hello-world/" class="article-date">
@@ -154,7 +110,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/03/19/hello-world/" data-id="cl0wtfcos0000cjt187kddqkd" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/03/19/hello-world/" data-id="cl0wtjoap0000emt10p3pgtki" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -195,10 +151,6 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2022/03/19/lyh/">(no title)</a>
-          </li>
         
           <li>
             <a href="/2022/03/19/hello-world/">Hello World</a>
